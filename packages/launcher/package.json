@@ -1,0 +1,33 @@
+{
+  "name": "@famoney/launcher",
+  "version": "0.0.0",
+  "description": "Backend Launcher",
+  "keywords": [
+    "launcher",
+    "NestJS"
+  ],
+  "author": "Roman Smushkevich <karmara.roman@gmail.com>",
+  "homepage": "https://github.com/HerrRomich/FaMoney_node#readme",
+  "license": "ISC",
+  "main": "lib/launcher.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HerrRomich/FaMoney_node.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@famoney/launcher.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/HerrRomich/FaMoney_node/issues"
+  }
+}
