@@ -1,7 +1,7 @@
 {
-  "name": "@famoney/launcher",
+  "name": "@famoney/accounts-api",
   "version": "0.0.0",
-  "description": "Backend Launcher",
+  "description": "Accounts API",
   "keywords": [
     "launcher",
     "NestJS"
@@ -9,13 +9,17 @@
   "author": "Roman Smushkevich <karmara.roman@gmail.com>",
   "homepage": "https://github.com/HerrRomich/FaMoney_node#readme",
   "license": "ISC",
+  "files": [
+    "dist/"
+  ],
+  "main": "dist/index.js",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build --watch",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
-    "start:debug": "nest start --debug --watch",
+    "start:debug": "nest build --watch",
     "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
@@ -25,11 +29,11 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@famoney/accounts-api": "0.0.0",
+    "@famoney/commons-api": "0.0.0",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
-    "nest-winston": "^1.8.0",
+    "moment": "^2.29.4",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
@@ -74,9 +78,5 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HerrRomich/FaMoney_node.git"
   }
 }

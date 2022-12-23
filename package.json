@@ -2,9 +2,10 @@
   "name": "root",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/**"
   ],
   "devDependencies": {
-    "lerna": "^6.1.0"
+    "lerna": "^6.1.0",
+    "@nestjs/cli": "^9.1.5"
   }
 }
