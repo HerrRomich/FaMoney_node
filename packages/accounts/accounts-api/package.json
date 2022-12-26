@@ -9,10 +9,8 @@
   "author": "Roman Smushkevich <karmara.roman@gmail.com>",
   "homepage": "https://github.com/HerrRomich/FaMoney_node#readme",
   "license": "ISC",
-  "files": [
-    "dist/"
-  ],
-  "main": "dist/index.js",
+  "files": ["dist/"],
+  "main": "dist/main",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build --watch",
