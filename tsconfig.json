@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@famoney/commons-domain": [
+        "libs/commons/commons-domain/src"
+      ],
+      "@famoney/commons-domain/*": [
+        "libs/commons/commons-domain/src/*"
+      ],
+      "@famoney/commons-api": [
+        "libs/commons/commons-api/src",
+      ],
+      "@famoney/commons-api/*": [
+        "libs/commons/commons-api/src/*",
+      ],
+      "@famoney/commons-logger": [
+        "libs/commons/commons-logger/src",
+      ],
+      "@famoney/commons-logger/*": [
+        "libs/commons/commons-logger/src/*",
+      ],
+      "@famoney/accounts-domain": [
+        "libs/accounts/accounts-domain/src"
+      ],
+      "@famoney/accounts-domain/*": [
+        "libs/accounts/accounts-domain/src/*"
+      ],
+      "@famoney/accounts-api": [
+        "libs/accounts/accounts-api/src"
+      ],
+      "@famoney/accounts-api/*": [
+        "libs/accounts/accounts-api/src/*"
+      ]
+    }
+  },
+}

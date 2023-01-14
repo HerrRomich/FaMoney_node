@@ -1,0 +1,27 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@famoney/commons/commons-domain/(.*)": "<rootDir>/../libs/commons/commons-domain/src/$1",
+    "@famoney/commons/commons-domain": "<rootDir>/../libs/commons/commons-domain/src",
+    "@famoney/commons/commons-api/(.*)": "<rootDir>/../libs/commons/commons-api/src/$1",
+    "@famoney/commons/commons-api": "<rootDir>/../libs/commons/commons-api/src",
+    "@famoney/accounts/accounts-domain/(.*)": "<rootDir>/../libs/accounts/accounts-domain/src/$1",
+    "@famoney/accounts/accounts-domain": "<rootDir>/../libs/accounts/accounts-domain/src",
+    "@famoney/accounts-api/(.*)": "<rootDir>/../libs/accounts-api/src/$1",
+    "@famoney/accounts-api": "<rootDir>/../libs/accounts-api/src",
+    "@famoney/commons-api/(.*)": "<rootDir>/../libs/commons-api/src/$1",
+    "@famoney/commons-api": "<rootDir>/../libs/commons-api/src",
+    "@famoney/commons-logger/(.*)": "<rootDir>/../libs/commons-logger/src/$1",
+    "@famoney/commons-logger": "<rootDir>/../libs/commons-logger/src"
+  }
+}
